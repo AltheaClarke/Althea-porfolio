@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/*NAVBAR*/
+
+nav {
+  display: flex;
+  background-color: #f509dd;
+  align-items: center;
+}
+nav .left-nav {
+  width: 30%;
+}
+nav .left-nav img {
+  width: 30%;
+  padding: 0 0 0 3%;
+}
+nav .right-nav {
+  width: 70%;
+}
+nav .right-nav .nav-headings{
+  display: flex;
+  gap: 4%;
+  justify-content: flex-end;
+  padding:0% 4% 0 0;
+  align-items: center;
+  text-decoration: none;
+  cursor: pointer;
+   color: #fff;
+  /* color: rgb(14, 14, 119); */
+}
+nav .right-nav .nav-headings h3 {
+  font-size: 1.2vw;
+  
+}
+/*MAIN*/
+
+.main {
+  position: relative;
+}
+
+.main img {
+  width: 100%;
+}
+
+.main .main-heading {
+  position: absolute;
+  top: 9%;
+  left: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+.main .main-heading h3 {
+  font-size: 4vw;
+  color: #f509dd;
+  font-family: 'Poppins';
+  font-weight: 400;
+ 
+}
+.main .main-heading h1 {
+  font-size: 8vw;
+  width: 100%;
+  font-family: "Alex Brush", cursive;
+  color: rgb(14, 14, 119);
+}
+.main .main-heading .icons {
+  display: flex;
+  justify-content: flex-start;
+  gap: 3rem;
+  align-items: center;
+}
+.main .icons a img {
+  width: 100%;
+}
+/*ABOUT*/
+
+.abt {
+  position: relative;
+  height: 40vw;
+}
+
+.abt img {
+  position: absolute;
+  width: 57%;
+  top: 30%;
+  left: 21%;
+}
+
+.abt .about-me-desc {
+  position: absolute;
+  color: rgb(14, 14, 119);
+  z-index: 2;
+  width: 70%;
+  text-align: center;
+  top: 33%;
+  font-size: 3vw;
+  left: 17%;
+}
+/*PROJECTS*/
+.project {
+  position: absolute;
+  height: 10vw;
+}
+
+.project .grid .assignments {
+  margin: 2% 10%;
+}
+.project .grid .assignments .image-container video{
+  width: 320px;
+  height: 240px;
+  border: 2px solid #f509dd;
+}
+.project .grid .assignments .image-container {
+  justify-content: center;
+
+  display: flex;
+}
+.project .grid .assignments .image-container img {
+  width: 50%;
+  max-width: 100%;
+  max-height: 100%;
+}
+.project h1 {
+  text-align: center;
+  font-size: 2.7vw;
+  color: grey;
+  font-family: Poppins;
+}
+.project .grid .assignments .description p {
+  text-align: center;
+
+  justify-content: center;
+  display: flex;
+  margin: 1% 21%;
+  font-size: 1.5vw;
+}
+.project .grid .assignments .description .buttons {
+  justify-content: center;
+  width: 100%;
+  display: flex;
+  gap: 2%;
+  padding: 2% 0;
+}
+.project .grid .assignments .description .buttons button {
+  color: #fff;
+  background-color: rgba(128, 128, 128, 0.986);
+  border-radius: 20px;
+  padding: 1% 2%;
+  border: none;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+}
+.project .grid .assignments .description .buttons button a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1vw;
+}
+.project .grid {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 2%;
+}
+
+
+
+@media screen and (max-width: 500px) {
+  .main .icons {
+    position: absolute;
+    top: 35%;
+    display: flex;
+    gap: 21%;
+    left: 17%;
+    margin-right: -8%;
+  }
+  .main .icons img {
+    width: 19%;
+  }
+}
+
